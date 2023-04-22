@@ -1,0 +1,12 @@
+.profile__info-name-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 879px) {
+    .profile__info-name-button {
+        max-width: 282px;
+        justify-content: center;
+        padding: 26px 0 0 0;
+    }
+}

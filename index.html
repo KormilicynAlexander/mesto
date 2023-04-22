@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kormilicyn Alexander">
+  <meta name="description" content="educational project">
+  <meta name="keywords" content="HTML, CSS, FlexBox, Animation, meta tag, grid, Liquid, Adaptive, Responsive, JavaScript">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto</title>
+</head>
+<body class="page">
+    <header class="header">
+        <img class="header__logo" src="./images/header__logo.svg" alt="Логотип Mesto">
+    </header>
+    <main class="main">
+        <section class="profile">
+            <img class="profile__avatar" src="./images/profile__image.jpg" alt="Заставка профиля">
+            <div class="profile__info">
+                <div class="profile__info-name-button">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button class="profile__edit-button"></button>
+                </div>
+                <p class="profile__career">Исследователь океана</p>
+            </div>
+            <div class="profile__add-button"></div>
+        </section>
+        <section class="elements">
+            <div class="element">
+                <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
+                <div class="element__group">
+                    <p class="element__group-name">Карачаевск</p>
+                    <div class="element__group-like-container">
+                        <button class="element__group-like"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="./images/element__mask-group-img-elbrus.png" class="element__mask-group" alt="Загруженная фотография пользователя">
+                <div class="element__group">
+                    <p class="element__group-name">Гора Эльбрус</p>
+                    <div class="element__group-like-container">
+                        <button class="element__group-like"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="./images/element__mask-group-img-dombay.png" class="element__mask-group" alt="Загруженная фотография пользователя">
+                <div class="element__group">
+                    <p class="element__group-name">Домбай</p>
+                    <div class="element__group-like-container">
+                        <button class="element__group-like"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="./images/element__mask-group-img-dombay.png" class="element__mask-group" alt="Загруженная фотография пользователя">
+                <div class="element__group">
+                    <p class="element__group-name">Домбай</p>
+                    <div class="element__group-like-container">
+                        <button class="element__group-like"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="./images/element__mask-group-img-elbrus.png" class="element__mask-group" alt="Загруженная фотография пользователя">
+                <div class="element__group">
+                    <p class="element__group-name">Гора Эльбрус</p>
+                    <div class="element__group-like-container">
+                        <button class="element__group-like"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
+                <div class="element__group">
+                    <p class="element__group-name">Карачаевск</p>
+                    <div class="element__group-like-container">
+                        <button class="element__group-like"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__project-name">© 2023 Mesto Russia</h2>
+    </footer>
+    <section class="pop-up">
+        <form class="pop-up-form">
+            <h2 class="pop-up-form__name">Редактировать профиль</h2>
+            <div class="pop-up-form__fields">
+                <input class="pop-up-form__input" id="username" placeholder="Жак-Ив Кусто" name="username1" value="Жак-Ив Кусто" required>
+                <input class="pop-up-form__input" id="career" placeholder="Исследователь океана" name="career" value="Исследователь океана" required>
+            </div>
+            <button class="pop-up-form__submit" type="submit">Сохранить</button>
+            <button class="pop-up__exit-button" type="button"></button>
+        </form>
+    </section>
+    <script src="./index.js" defer></script>
+</body>
+</html>

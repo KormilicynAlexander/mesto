@@ -1,0 +1,13 @@
+.element__group-like {
+    background: transparent url(../../../images/element__group-like-img.svg) no-repeat 50%;
+    border: none;
+    margin: 0;
+    height: 19px;
+    width: 22px;
+}
+
+.element__group-like:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: linear 0.2s;
+}
