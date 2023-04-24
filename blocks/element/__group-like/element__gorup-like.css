@@ -8,6 +8,6 @@
 
 .element__group-like:hover {
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: linear 0.2s;
 }

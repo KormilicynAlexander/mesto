@@ -19,83 +19,73 @@
             <div class="profile__info">
                 <div class="profile__info-name-button">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <button class="profile__edit-button"></button>
+                    <button class="profile__edit-button" type="button"></button>
                 </div>
                 <p class="profile__career">Исследователь океана</p>
             </div>
-            <div class="profile__add-button"></div>
+            <button class="profile__add-button" type="button"></button>
         </section>
         <section class="elements">
-            <div class="element">
+            <article class="element">
                 <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
                 <div class="element__group">
-                    <p class="element__group-name">Карачаевск</p>
-                    <div class="element__group-like-container">
-                        <button class="element__group-like"></button>
-                    </div>
+                    <h2 class="element__group-name">Карачаевск</h2>
+                    <button class="element__group-like" type="button"></button>
                 </div>
-            </div>
-            <div class="element">
+            </article>
+            <article class="element">
                 <img src="./images/element__mask-group-img-elbrus.png" class="element__mask-group" alt="Загруженная фотография пользователя">
                 <div class="element__group">
-                    <p class="element__group-name">Гора Эльбрус</p>
-                    <div class="element__group-like-container">
-                        <button class="element__group-like"></button>
-                    </div>
+                    <h2 class="element__group-name">Гора Эльбрус</h2>
+                    <button class="element__group-like" type="button"></button>
                 </div>
-            </div>
-            <div class="element">
+            </article>
+            <article class="element">
                 <img src="./images/element__mask-group-img-dombay.png" class="element__mask-group" alt="Загруженная фотография пользователя">
                 <div class="element__group">
-                    <p class="element__group-name">Домбай</p>
-                    <div class="element__group-like-container">
-                        <button class="element__group-like"></button>
-                    </div>
+                    <h2 class="element__group-name">Домбай</h2>
+                    <button class="element__group-like" type="button"></button>
                 </div>
-            </div>
-            <div class="element">
+            </article>
+            <article class="element">
                 <img src="./images/element__mask-group-img-dombay.png" class="element__mask-group" alt="Загруженная фотография пользователя">
                 <div class="element__group">
-                    <p class="element__group-name">Домбай</p>
-                    <div class="element__group-like-container">
-                        <button class="element__group-like"></button>
-                    </div>
+                    <h2 class="element__group-name">Домбай</h2>
+                    <button class="element__group-like" type="button"></button>
                 </div>
-            </div>
-            <div class="element">
+            </article>
+            <article class="element">
                 <img src="./images/element__mask-group-img-elbrus.png" class="element__mask-group" alt="Загруженная фотография пользователя">
                 <div class="element__group">
-                    <p class="element__group-name">Гора Эльбрус</p>
-                    <div class="element__group-like-container">
-                        <button class="element__group-like"></button>
-                    </div>
+                    <h2 class="element__group-name">Гора Эльбрус</h2>
+                    <button class="element__group-like" type="button"></button>
                 </div>
-            </div>
-            <div class="element">
+            </article>
+            <article class="element">
                 <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
                 <div class="element__group">
-                    <p class="element__group-name">Карачаевск</p>
-                    <div class="element__group-like-container">
-                        <button class="element__group-like"></button>
-                    </div>
+                    <h2 class="element__group-name">Карачаевск</h2>
+                    <button class="element__group-like" type="button"></button>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
     <footer class="footer">
-        <h2 class="footer__project-name">© 2023 Mesto Russia</h2>
+        <p class="footer__project-name">© 2023 Mesto Russia<p>
     </footer>
-    <section class="pop-up">
-        <form class="pop-up-form">
-            <h2 class="pop-up-form__name">Редактировать профиль</h2>
-            <div class="pop-up-form__fields">
-                <input class="pop-up-form__input" id="username" placeholder="Жак-Ив Кусто" name="username1" value="Жак-Ив Кусто" required>
-                <input class="pop-up-form__input" id="career" placeholder="Исследователь океана" name="career" value="Исследователь океана" required>
-            </div>
-            <button class="pop-up-form__submit" type="submit">Сохранить</button>
-            <button class="pop-up__exit-button" type="button"></button>
-        </form>
-    </section>
-    <script src="./index.js" defer></script>
+    <div class="popup">
+        <div class="popup-form__container">
+            <form class="popup-form" name="Форма редактирования профиля">
+                <h2 class="popup-form__name">Редактировать профиль</h2>
+                <div class="popup-form__fields">
+                    <input class="popup-form__input" id="username" placeholder="Имя" name="username1" value="Жак-Ив Кусто" required>
+                    <input class="popup-form__input" id="career" placeholder="Род деятельности" name="career" value="Исследователь океана" required>
+                </div>
+                <button class="popup-form__submit" type="submit">Сохранить</button>
+            </form>
+            <button class="popup__exit-button" type="button"></button>
+        </div>
+    </div>
+    <script src="./js/index.js" defer></script>
 </body>
 </html>

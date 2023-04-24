@@ -1,4 +1,4 @@
-.pop-up__exit-button {
+.popup__exit-button {
     background: url(../../../images/pop-up__exit-button.svg);
     width: 32px;
     height: 32px;
@@ -8,14 +8,14 @@
     right: -40px;
 }
 
-.pop-up__exit-button:hover {
+.popup__exit-button:hover {
     cursor: pointer;
     opacity: 0.6;
     transition: linear 0.2s;
 }
 
 @media screen and (max-width: 879px) {
-    .pop-up__exit-button {
+    .popup__exit-button {
         right: 0;
         top: -36px;
         width: 20px;

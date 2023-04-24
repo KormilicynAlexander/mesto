@@ -1,4 +1,4 @@
-.pop-up-form__name {
+.popup-form__name {
     font-size: 24px;
     font-weight: 900;
     line-height: 29px;
@@ -9,10 +9,9 @@
 }
 
 @media screen and (max-width: 879px) {
-    .pop-up-form__name {
+    .popup-form__name {
         width: 238px;
         font-size: 18px;
-        font-weight: 900;
         line-height: 22px;
         padding: 25px 0 75px 0;
     }
