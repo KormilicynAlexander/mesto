@@ -8,15 +8,15 @@ let profilePopupValueName = popupForm.querySelector('#username');
 let profilePopupValueCareer = popupForm.querySelector('#career');
 
 function openPopup() {
-    popup.classList.add('popup_popup_opened');
-    oldName();
+    popup.classList.add('popup_opened');
+    setOldName();
 }
 
 function closePopup() {
-    popup.classList.remove('popup_popup_opened');
+    popup.classList.remove('popup_opened');
 }
 
-function oldName () {
+function setOldName () {
     profilePopupValueName.value = profileName.textContent
     profilePopupValueCareer.value =profileCareer.textContent
 }
