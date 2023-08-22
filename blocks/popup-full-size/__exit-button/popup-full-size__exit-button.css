@@ -1,0 +1,15 @@
+.popup-full-size__exit-button {
+    background: url(../../../images/pop-up__exit-button.svg);
+    width: 32px;
+    height: 32px;
+    border: none;
+    bottom: 5px;
+    left: 230px;
+    position: relative;
+}
+
+.popup-full-size__exit-button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: linear 0.2s;
+}

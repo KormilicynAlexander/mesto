@@ -26,57 +26,16 @@
             <button class="profile__add-button" type="button"></button>
         </section>
         <section class="elements">
-            <article class="element">
-                <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
-                <div class="element__group">
-                    <h2 class="element__group-name">Карачаевск</h2>
-                    <button class="element__group-like" type="button"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img src="./images/element__mask-group-img-elbrus.png" class="element__mask-group" alt="Загруженная фотография пользователя">
-                <div class="element__group">
-                    <h2 class="element__group-name">Гора Эльбрус</h2>
-                    <button class="element__group-like" type="button"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img src="./images/element__mask-group-img-dombay.png" class="element__mask-group" alt="Загруженная фотография пользователя">
-                <div class="element__group">
-                    <h2 class="element__group-name">Домбай</h2>
-                    <button class="element__group-like" type="button"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img src="./images/element__mask-group-img-dombay.png" class="element__mask-group" alt="Загруженная фотография пользователя">
-                <div class="element__group">
-                    <h2 class="element__group-name">Домбай</h2>
-                    <button class="element__group-like" type="button"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img src="./images/element__mask-group-img-elbrus.png" class="element__mask-group" alt="Загруженная фотография пользователя">
-                <div class="element__group">
-                    <h2 class="element__group-name">Гора Эльбрус</h2>
-                    <button class="element__group-like" type="button"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
-                <div class="element__group">
-                    <h2 class="element__group-name">Карачаевск</h2>
-                    <button class="element__group-like" type="button"></button>
-                </div>
-            </article>
-            <template class="template-element">
+            
                 <article class="element">
-                    <img src="" class="element__mask-group" alt="">
+                    <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
                     <div class="element__group">
-                        <h2 class="element__group-name"></h2>
+                        <h2 class="element__group-name">Карачаевск</h2>
                         <button class="element__group-like" type="button"></button>
                     </div>
+                    <button class="element__delete" type="button"></button>
                 </article>
-            </template>
+            
         </section>
     </main>
     <footer class="footer">
@@ -95,6 +54,39 @@
             <button class="popup__exit-button" type="button"></button>
         </div>
     </div>
+    <div class="popup-mesto">
+        <div class="popup__container-mesto">
+            <form class="popup-form" name="edit-form__mesto">
+                <h2 class="popup-form__name">Новое место</h2>
+                <div class="popup-form__fields">
+                    <input class="popup-form__input-mesto" id="location" placeholder="Название" name="Название места" required>
+                    <input class="popup-form__input-mesto" id="link" placeholder="Ссылка на картинку" name="Фотография места" required>
+                </div>
+                <button class="popup-form__submit" id="submit-mesto" type="submit">Создать</button>
+            </form>
+            <button class="popup__exit-button" id="popup__exit-button-mesto" type="button"></button>
+        </div>
+    </div>
+    <div class="popup-full-size">
+        <button class="popup-full-size__exit-button"></button>
+        <div class="popup-full-size__container">
+            <img class="popup-full-size__img" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg">
+            <h2 class="popup-full-size__img-name">dombay</h2>
+        </div>
+    </div>
+    <template class="list-template">
+        <div class="template-element">
+            <article class="element">
+                <img src="" class="element__mask-group" alt="Загруженная фотография пользователя">
+                <div class="element__group">
+                    <h2 class="element__group-name"></h2>
+                    <button class="element__group-like" type="button"></button>
+                </div>
+                <button class="element__delete" type="button"></button>
+            </article>
+        </div>
+    </template>
+    
     <script src="./js/index.js" defer></script>
 </body>
 </html>
