@@ -10,7 +10,6 @@
   <title>Mesto</title>
 </head>
 <body class="page">
-    <!-- тест -->
     <header class="header">
         <img class="header__logo" src="./images/header__logo.svg" alt="Логотип Mesto">
     </header>
@@ -26,18 +25,8 @@
             </div>
             <button class="profile__add-button" type="button"></button>
         </section>
-        <section class="elements">
-            
-                <article class="element">
-                    <img src="./images/element__mask-group-img-karachaevsk.jpg" class="element__mask-group" alt="Загруженная фотография пользователя">
-                    <div class="element__group">
-                        <h2 class="element__group-name">Карачаевск</h2>
-                        <button class="element__group-like" type="button"></button>
-                    </div>
-                    <button class="element__delete" type="button"></button>
-                </article>
-            
-        </section>
+        <template class="elements">
+        </template>
     </main>
     <footer class="footer">
         <p class="footer__project-name">© 2023 Mesto Russia</p>
@@ -57,7 +46,7 @@
     </div>
     <div class="popup-mesto">
         <div class="popup__container-mesto">
-            <form class="popup-form" name="edit-form__mesto">
+            <form class="popup-form" id="edit-form__mesto">
                 <h2 class="popup-form__name">Новое место</h2>
                 <div class="popup-form__fields">
                     <input class="popup-form__input-mesto" id="location" placeholder="Название" name="Название места" required>
