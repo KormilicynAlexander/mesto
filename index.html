@@ -19,7 +19,7 @@
             <div class="profile__info">
                 <div class="profile__info-name-button">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <button class="profile__edit-button" type="button"></button>
+                    <button class="profile__edit-button" type="button" aria-label="Редактировать профиль"></button>
                 </div>
                 <p class="profile__career">Исследователь океана</p>
             </div>
@@ -50,7 +50,7 @@
                 <h2 class="popup-form__name">Новое место</h2>
                 <div class="popup-form__fields">
                     <input class="popup-form__input-mesto" id="location" placeholder="Название" name="Название места" required>
-                    <input class="popup-form__input-mesto" id="link" placeholder="Ссылка на картинку" name="Фотография места" required>
+                    <input class="popup-form__input-mesto" id="link" placeholder="Ссылка на картинку" name="Фотография места" required type="url">
                 </div>
                 <button class="popup-form__submit" id="submit-mesto" type="submit">Создать</button>
             </form>
@@ -58,8 +58,8 @@
         </div>
     </div>
     <div class="popup-full-size">
-        <button class="popup-full-size__exit-button"></button>
         <div class="popup-full-size__container">
+            <button class="popup-full-size__exit-button"></button>
             <img class="popup-full-size__img" alt="" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg">
             <h2 class="popup-full-size__img-name">dombay</h2>
         </div>
@@ -76,7 +76,7 @@
             </article>
         </div>
     </template>
-    
+    <script src="./js/cards.js" defer></script>
     <script src="./js/index.js" defer></script>
 </body>
 </html>

@@ -1,32 +1,5 @@
 //Переписал всё с новым подходом* (заметка для себя)
 
-const initialCards = [
-  {
-  name: 'Архыз',
-  link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-  },
-  {
-  name: 'Челябинская область',
-  link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-  },
-  {
-  name: 'Иваново',
-  link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-  },
-  {
-  name: 'Камчатка',
-  link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-  },
-  {
-  name: 'Холмогорский район',
-  link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-  },
-  {
-  name: 'Байкал',
-  link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-  }
-];
-
 //Переменные для popup
 const infoButton = document.querySelector(".profile__edit-button");
 const userName = document.querySelector(".profile__name");
@@ -57,7 +30,7 @@ const elementsTemplate = document.querySelector(".list-template").content.queryS
 const elementsList = document.querySelector(".elements");
 
 //Функция открытия и закрытия popup
-function editOpenForm() {
+function openEditForm() {
   openPopup(popupEditProfile);
   userNameInput.value = userName.textContent;
   jobInput.value = jobName.textContent;
@@ -99,7 +72,7 @@ const likeHeart = (event) => {
 //Функция добавление карточки
 const submitAddCard = (event) => {
   event.preventDefault();
-  renderElements({
+  renderElement({
     name: popupInputPlaceTitle.value,
     link: popupInputPlaceLink.value,
   });
@@ -137,17 +110,17 @@ const handleDeleteCard = (event) => {
   event.target.closest(".element").remove();
 };
 
-const renderElements = (cardData) => {
+const renderElement = (cardData) => {
   elementsList.prepend(generateElementList(cardData));
 };
 
 initialCards.forEach((cardData) => {
-  renderElements(cardData);
+  renderElement(cardData);
 });
 
 //Cлушатели событий
 popupEditForms.addEventListener("submit", submitAddCard);
-infoButton.addEventListener("click", editOpenForm);
+infoButton.addEventListener("click", openEditForm);
 popupEditForm.addEventListener("submit", submitHandlerEdit);
 popupUserButton.addEventListener("click", openFormAddPhoto);
 popupExitButtonMesto.addEventListener("click", closePopupAddPhoto);

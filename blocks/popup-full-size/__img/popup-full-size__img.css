@@ -1,5 +1,6 @@
 .popup-full-size__img {
-    max-width: 40vw;
-    max-height: 40vw;
-    margin: 0;
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: 0 auto;
+    border: none;
 }

@@ -4,8 +4,9 @@
     height: 32px;
     border: none;
     bottom: 5px;
-    left: 230px;
-    position: relative;
+    position: absolute;
+    top: -38px;
+    right: -38px;
 }
 
 .popup-full-size__exit-button:hover {
